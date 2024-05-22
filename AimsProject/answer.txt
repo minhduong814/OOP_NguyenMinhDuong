@@ -1,0 +1,13 @@
+Question
+
+1. What class should implement the Comparable interface?
+- The Media class should be implemented that inherited classes get the Comparison methods
+
+2. In those classes, how should you implement the compareTo() method be to reflect the ordering that we want?
+- Depends on the specific ordering criteria. In the demonstration above, it uses chained comparison logic.
+
+3. Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+- No, the interface approach only allows a single ordering rule within a class.
+
+4. Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+- Overriding compareTo() method to allow different ordering rules
